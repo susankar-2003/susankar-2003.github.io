@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.crown.chess",
+      "sha256_cert_fingerprints": [
+        "01:20:CD:06:BC:28:4E:1D:D5:BF:3D:77:80:D6:0B:D7:84:19:B5:3B:8F:3B:85:C4:D0:29:B5:C7:81:39:74:37"
+      ]
+    }
+  }
+]
