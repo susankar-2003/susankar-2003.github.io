@@ -3,137 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our App Store & Portfolio</title>
+    <title>SR Store - App Portfolio</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f4f7f6;
             color: #333;
+            line-height: 1.6;
         }
+        
+        /* Header Styling */
         header {
-            background-color: #0056b3;
-            color: white;
-            padding: 40px 20px;
             text-align: center;
+            padding: 40px 20px 20px 20px;
+            background-color: #ffffff;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            color: #0d6efd;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         header p {
             margin-top: 10px;
-            font-size: 1.2em;
-            opacity: 0.9;
+            font-size: 1.1em;
+            color: #6c757d;
+            font-style: italic;
         }
+        .header-divider {
+            height: 4px;
+            background-color: #0d6efd;
+            width: 100%;
+            border: none;
+            margin: 0;
+        }
+
         .container {
             max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
+
+        /* About Section (Matching the image) */
+        .about-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 6px solid #0d6efd;
+            margin-bottom: 40px;
+        }
+        .about-card h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .about-card p {
+            color: #495057;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            font-weight: 500;
+        }
+        .contact-info a {
+            color: #0d6efd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Store Links Section */
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        .store-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+        .store-btn {
+            background-color: #ffffff;
+            color: #0d6efd;
+            text-decoration: none;
+            padding: 12px 24px;
+            border: 2px solid #0d6efd;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .store-btn:hover {
+            background-color: #0d6efd;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* App Portfolio Grid */
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
-            margin-top: 30px;
         }
         .app-card {
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             text-align: center;
-            transition: transform 0.2s;
-        }
-        .app-card:hover {
-            transform: translateY(-5px);
+            border-top: 4px solid #e9ecef;
         }
         .app-title {
             font-size: 1.3em;
             font-weight: bold;
             margin-bottom: 10px;
-            color: #0056b3;
+            color: #2c3e50;
         }
         .app-desc {
             font-size: 0.95em;
-            color: #666;
+            color: #6c757d;
             margin-bottom: 20px;
-            line-height: 1.5;
         }
-        .play-store-btn {
-            display: inline-block;
-            background-color: #008c3a;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-        }
-        .play-store-btn:hover {
-            background-color: #00702e;
-        }
-        .footer-links {
-            margin-top: 50px;
+
+        /* Footer */
+        .footer {
+            margin-top: 60px;
             text-align: center;
-            padding: 20px;
-            border-top: 1px solid #ddd;
-            color: #777;
+            padding: 30px;
+            background-color: #ffffff;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
         }
-        .footer-links a {
-            color: #0056b3;
+        .footer a {
+            color: #0d6efd;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to Our App Portfolio</h1>
-        <p>Discover our latest mobile applications and games for Android</p>
+        <h1>SR STORE</h1>
+        <p>Turning Imaginations into Reality Through App Development</p>
     </header>
+    <hr class="header-divider">
 
     <div class="container">
-        <h2>Featured Applications</h2>
         
+        <!-- About Us Section -->
+        <div class="about-card">
+            <h2>Welcome to SR Store</h2>
+            <p>Hello everyone! We are Susankar and Rashmi Choudhury, a passionate team of independent developers based in India. What started as an individual dream has grown into a collaborative journey to turn our imaginations into reality through innovative app development.</p>
+            <p>We believe in crafting digital solutions that don't just work, but truly delight. Our ultimate goal is to deliver a beautiful, seamless, and meaningful experience to our users. Every line of code we write and every design choice we make is focused on creating applications that simplify your life, bring value to your daily routine, and push the boundaries of what mobile apps can achieve.</p>
+            <p>Your feedback is our greatest tool for improvement. If you have any questions, suggestions, or inquiries related to our applications, please don't hesitate to reach out. Thank you for being a part of our journey!</p>
+            
+            <div class="contact-info">
+                <strong>Get in touch:</strong><br>
+                ✉ <a href="mailto:susankarborgohain@gmail.com">susankarborgohain@gmail.com</a><br>
+                ✉ <a href="mailto:choudhuryrashmi600@gmail.com">choudhuryrashmi600@gmail.com</a><br>
+                ✉ <a href="mailto:srstore.support@gmail.com">srstore.support@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Store Links -->
+        <h2 class="section-title">Find Our Apps On</h2>
+        <div class="store-grid">
+            <a href="YOUR_PLAY_STORE_LINK_HERE" class="store-btn">Google Play Store</a>
+            <a href="YOUR_APKPURE_LINK_HERE" class="store-btn">APKPure</a>
+            <a href="YOUR_UPTODOWN_LINK_HERE" class="store-btn">Uptodown</a>
+            <a href="YOUR_INDUS_APPSTORE_LINK_HERE" class="store-btn">Indus Appstore (PhonePe)</a>
+            <a href="YOUR_SOFTONIC_LINK_HERE" class="store-btn">Softonic</a>
+        </div>
+
+        <!-- Featured Apps -->
+        <h2 class="section-title">Featured Applications</h2>
         <div class="app-grid">
-            <!-- App 1 -->
             <div class="app-card">
                 <div class="app-title">CBTExam: Mock Test & PYQ</div>
                 <div class="app-desc">A comprehensive competitive exam preparation platform with mock tests and local offline file importing.</div>
-                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
             </div>
 
-            <!-- App 2 -->
             <div class="app-card">
                 <div class="app-title">Chaneki</div>
                 <div class="app-desc">Showcasing traditional Assamese handloom motifs and AI-assisted textile weaving pattern generation.</div>
-                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
             </div>
 
-            <!-- App 3 -->
             <div class="app-card">
                 <div class="app-title">Crown Chess</div>
                 <div class="app-desc">A classic, optimized chess experience for mobile players.</div>
-                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
             </div>
             
-             <!-- App 4 -->
             <div class="app-card">
-                <div class="app-title">ABCVocals</div>
-                <div class="app-desc">An interactive utility built for modern Android devices.</div>
-                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
+                <div class="app-title">Khabor</div>
+                <div class="app-desc">A dynamic news application featuring seamless media sliders and automated video playback.</div>
             </div>
         </div>
+
     </div>
 
-    <div class="footer-links">
-        <a href="https://adre-4a551.firebaseapp.com/privacy" target="_blank">Privacy Policy</a> |
-        <a href="YOUR_TERMS_OF_SERVICE_LINK" target="_blank">Terms of Service</a> |
-        <a href="mailto:your-email@example.com">Contact Support</a>
-        <p>&copy; 2026 Susankar. All rights reserved.</p>
+    <div class="footer">
+        <a href="https://adre-4a551.firebaseapp.com/privacy" target="_blank">Privacy Policy</a>
+        <a href="YOUR_TERMS_OF_SERVICE_LINK" target="_blank">Terms of Service</a>
+        <p>&copy; 2026 SR Store. All rights reserved.</p>
     </div>
 
 </body>
