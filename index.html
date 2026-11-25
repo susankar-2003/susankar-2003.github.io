@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our App Store & Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .app-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+        .app-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .app-desc {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .play-store-btn {
+            display: inline-block;
+            background-color: #008c3a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .play-store-btn:hover {
+            background-color: #00702e;
+        }
+        .footer-links {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+        }
+        .footer-links a {
+            color: #0056b3;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our App Portfolio</h1>
+        <p>Discover our latest mobile applications and games for Android</p>
+    </header>
+
+    <div class="container">
+        <h2>Featured Applications</h2>
+        
+        <div class="app-grid">
+            <!-- App 1 -->
+            <div class="app-card">
+                <div class="app-title">CBTExam: Mock Test & PYQ</div>
+                <div class="app-desc">A comprehensive competitive exam preparation platform with mock tests and local offline file importing.</div>
+                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
+            </div>
+
+            <!-- App 2 -->
+            <div class="app-card">
+                <div class="app-title">Chaneki</div>
+                <div class="app-desc">Showcasing traditional Assamese handloom motifs and AI-assisted textile weaving pattern generation.</div>
+                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
+            </div>
+
+            <!-- App 3 -->
+            <div class="app-card">
+                <div class="app-title">Crown Chess</div>
+                <div class="app-desc">A classic, optimized chess experience for mobile players.</div>
+                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
+            </div>
+            
+             <!-- App 4 -->
+            <div class="app-card">
+                <div class="app-title">ABCVocals</div>
+                <div class="app-desc">An interactive utility built for modern Android devices.</div>
+                <a href="YOUR_PLAY_STORE_LINK_HERE" class="play-store-btn">View on Google Play</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <a href="https://adre-4a551.firebaseapp.com/privacy" target="_blank">Privacy Policy</a> |
+        <a href="YOUR_TERMS_OF_SERVICE_LINK" target="_blank">Terms of Service</a> |
+        <a href="mailto:your-email@example.com">Contact Support</a>
+        <p>&copy; 2026 Susankar. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
